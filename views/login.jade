@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= 'login'
+  p this is 登录页的第一次查询
+
+  ul
+    - for(var i=0;i<data.length;++i){
+      li #{data[i].id}  #{data[i].username} #{data[i].password}
+    - }
+
+
